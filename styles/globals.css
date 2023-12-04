@@ -1,0 +1,578 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("../font/InterVariableFont.ttf") format("truetype");
+}
+
+body {
+  font-family: "Inter";
+}
+.datagrid {
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.home-page {
+  background-color: #f0f1f3;
+  display: flex;
+}
+
+.login_page {
+  width: 100%;
+  height: 100vh;
+}
+
+.logIn__wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* min-height: 50vh; */
+}
+
+.lg__Ttl h2 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 600;
+  color: #2b2f38;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.lg__Ttl p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #667085;
+  text-align: center;
+}
+
+.input__Fld input {
+  width: 100%;
+  border: 1px solid #d0d5dd;
+  outline: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #667085;
+  transition: 0.3s ease-in-out;
+}
+
+.input__Fld input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #667085;
+}
+
+.lg__Mn-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lg__Fld {
+  margin-bottom: 20px;
+}
+
+.input__Fld {
+  margin-top: 6px;
+}
+
+.rem__Div {
+  margin-bottom: 24px;
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lg__Fld label,
+.rm_Pass label,
+.frg__Pas span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #48505e;
+}
+
+.frg__Pas span {
+  color: #1366d9;
+  cursor: pointer;
+}
+
+.sbt__Btn button {
+  width: 100%;
+  padding: 7px 18px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  background: #1366d9;
+  border: 1px solid #1366d9;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+}
+
+.sbt__Btn button:hover {
+  color: #1366d9;
+  background: #fff;
+}
+
+.button {
+  width: 100%;
+  padding: 8px 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #5d6679;
+  border: 1px solid #5d6679;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+.ck__Act p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #667085;
+  text-align: center;
+}
+
+.ck__Act p span {
+  color: #1366d9;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ck__Act {
+  margin-top: 5rem;
+}
+
+.lexoddLogo_con {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lexodd {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.lexodd p {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.lg__Box input:focus-visible {
+  outline: none;
+  border: 1px solid #1366d9;
+}
+
+.info {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #667085;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.rm_Pass label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: black;
+
+  height: 100vh;
+  align-items: center;
+
+  margin-top: 40%;
+}
+.each-navigation {
+  width: -webkit-fill-available;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+.Nav-icon {
+  margin-left: 20px;
+}
+.Nav-display-name {
+  font-size: larger;
+  margin-left: 10px;
+}
+
+.navigation-selected {
+  background-color: lavender;
+
+  color: black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.AddProduct__wrap {
+  min-width: 22rem;
+  max-height: 50vh;
+  padding: "15px";
+}
+
+.AddproductCard h2 {
+  color: rgba(56, 62, 73, 1);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.deatails__Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.fields__Box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deatails__Fld {
+  display: flex;
+  /* align-items: center; */
+  /* gap: 10px; */
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+.deatails__Fld p {
+  flex: 1;
+  color: rgba(72, 80, 94, 1);
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.Btns__container,
+.recBtns__container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.recBtns__container {
+  justify-content: space-around;
+}
+
+.add__Btn,
+.payrollAdd__Btn,
+.payrollSub__Btn button {
+  width: 100%;
+  text-align: center;
+  padding: 10px 18px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  background: #1366d9;
+  border: 1px solid #1366d9;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.dcrd__Btn {
+  padding: 7px 18px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: rgb(158, 158, 158);
+  border: 1px solid rgb(158, 158, 158);
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.OnboardingFormCard {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.sbt__Btn {
+  height: 40px;
+}
+.eds_Btn {
+  height: 40px;
+}
+.OnboardingFormCard {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.EditStatusFormCard {
+  /* width: 30rem; */
+  min-width: 22rem;
+  max-height: 50vh;
+}
+
+.OnboardingFormCard,
+.EditStatusFormCard h2 {
+  color: rgba(56, 62, 73, 1);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 28px;
+  white-space: nowrap;
+}
+
+.auto__Fld,
+.text__Fld {
+  flex: 3;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  min-width: 120px;
+}
+
+.ReceiptCard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 1rem;
+  min-width: 22rem;
+}
+
+.ReceiptCard h2 {
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.ReceiptCard .details__Box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.PayrollCard {
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.PayrollCard h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.prDeatails__Box,
+.prFields__Box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prDeatails__Fld {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prDeatails__Fld .colon {
+  font-size: 20px;
+}
+
+.prDeatails__Fld p {
+  flex: 1;
+}
+
+.nText__Fld {
+  flex: 3;
+}
+
+.payrollAdd__Btn {
+  text-align: right;
+}
+.payrollSub__Btn {
+  text-align: center;
+}
+
+.details__Fld {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recPage_buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.recPage_buttons button {
+  color: white;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* YourComponent.css */
+
+/* For Webkit browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Set your desired width */
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Set your desired gray color */
+  border-radius: 4px; /* Set rounded corners */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Set your desired track color */
+}
+.noWhiteSpace {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .deatails__Fld {
+    display: flex;
+    /* align-items: baseline; */
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .AddProduct__wrap {
+    min-width: 18rem;
+    max-height: 50vh;
+  }
+  .EditStatusFormCard {
+    /* width: 30rem; */
+    min-width: 18rem;
+    max-height: 50vh;
+  }
+  .ReceiptCard {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 1rem;
+    min-width: 18rem;
+  }
+}
+.eds__Btn {
+  display: flex;
+  align-items: center;
+}
+.overview {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5d6679;
+  display: flex;
+  justify-content: center;
+}
+
+.mainborder {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Change color on hover */
+}
+
+/* Set the color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Set the color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.upload-button {
+  display: flex;
+  /* width: 300px; */
+  /* margin-left: 20px; */
+}
+.upload-texts {
+  width: 100%;
+  display: flex;
+
+  border: 1px solid #777777;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload-browse {
+  background-color: #dce3e8;
+  height: 100%;
+  padding: 10px;
+  /* height: 56px !important; */
+  /* width: 135px; */
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
