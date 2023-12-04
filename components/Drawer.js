@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import Addproduct from "./Addproduct";
+import Addproduct from "./AddProduct.js";
 import Loader from "./Loader";
 import UploadData from './UploadData'
 
